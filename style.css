@@ -19,17 +19,17 @@ body{
 }
 
 .header{
-    background-image: url(images/bg1.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
     display: flex;
     align-items: center;
-    align-items: center;
     text-align: center; /* Añadido para centrar contenido en dispositivos pequeños */
     padding: 0 20px;
 }
+
+
 
 .header-txt{
     text-align: center;
@@ -59,6 +59,18 @@ body{
     color: #bebebe;
     margin-bottom: 45px;
 }
+
+.graduation-cap {
+    position: absolute;
+    top: 10%;
+    right: 22%;
+    width: 200px;
+    height: 200px;
+    background: url('/images/f1.png') no-repeat center center;
+    background-size: contain;
+    transform: rotate(10deg);
+}
+
 
 .general{
     padding: 50px 0;
@@ -263,54 +275,110 @@ h2{
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    .header-txt h1 {
-        font-size: 50px; /* Reducido tamaño de encabezado para dispositivos pequeños */
-        margin-bottom: 50px; /* Ajuste de margen inferior para dispositivos pequeños */
+@media (max-width: 808px) {
+    .header{
+        min-height: 0vh;
     }
 
-    .header-txt p {
-        font-size: 16px; /* Reducido tamaño de fuente para dispositivos pequeños */
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-txt h1{
+        font-size: 50px;
+    }
+
+    .header-txt p{
+        padding: 0;
+    }
+
+    .graduation-cap{
+        position: absolute;
+        top: 20%;
+        right: -20%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .general{
+        padding: 30px 30px 0 30px;
+    }
+
+    .general-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
     .general-1,
-    .general-2,
-    .general-3 txt{
-        height: 350px;
-        padding: 100px 30px;
-        padding: 15px; /* Ajuste de padding para dispositivos pequeños */
+    .general-2{
+        height: 250px;
+        padding: 50px 30px;
+        margin-bottom: 10px;
     }
 
-    .general-1 i,
-    .general-2 i {
-        font-size: 30px; /* Reducido tamaño de ícono para dispositivos pequeños */
+    .general-3{
+        height: 300px;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+        background: linear-gradient(to bottom, #e5e5e5, #9a9a9a);    border-radius: 20px;
+        margin: 20px;
+        justify-content: center;
+        text-align: center;
+       
+        
     }
 
-    .txt h3 {
-        font-size: 20px; /* Reducido tamaño de encabezado para dispositivos pequeños */
+    .info-1{
+        padding: 200px 30px;
+        background-size: cover;
+        margin-top: -110px;
     }
 
-    .txt p {
-        font-size: 16px; /* Reducido tamaño de fuente para dispositivos pequeños */
+    .circle-div{
+        flex-direction: column;
+        align-items: center;
     }
 
-    .circle-left,
-    .circle-img {
-        padding: 10px; /* Ajuste de padding para dispositivos pequeños */
+    .circle-txt{
+        width: 100%;
+        margin-bottom: 25px;
     }
 
-    .circle-img img {
-        width: 100%; /* Añadido para ocupar todo el ancho de la imagen en dispositivos pequeños */
+    .g3{
+        margin-top: -120px;
     }
 
-    .ima-robot {
-        padding: 15px 5px; /* Ajuste de padding para dispositivos pequeños */
+    .info-2{
+        padding: 200px 30px;
+        background-size: cover;
+        margin-top: -180px;
     }
 
-    .testi-txt h3 {
-        font-size: 30px; /* Reducido tamaño de encabezado para dispositivos pequeños */
+    .testi{
+        flex-direction: column;
     }
 
-    .footer-txt p {
-        font-size: 12px; /* Reducido tamaño de fuente para dispositivos pequeños */
+    .testi-left{
+        width: 100%;
+        padding-right: 0;
     }
+
+    .testi-right{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .h2{
+        font-size: 40px;
+    }
+
+    .footer{
+        padding: 0;
+        margin-top: -140px;
+    }
+
+    .footer-txt{
+        margin-top: 30px;
+    }
+}
